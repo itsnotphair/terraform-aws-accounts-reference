@@ -7,16 +7,16 @@ locals {
   )
 }
 
-variable state_bucket {
+variable "state_bucket" {
   type = string
 }
 
-variable email_domain {
+variable "email_domain" {
   type        = string
   description = "The domain name for email addresses of created accounts"
 }
 
-variable email_prefix {
+variable "email_prefix" {
   type        = string
   description = "The prefix for account email addresses. Emails will be in the format <prefix><account name>@<domain>"
 }
@@ -26,17 +26,17 @@ variable "account_names" {
   default = []
 }
 
-variable admin_group {
+variable "admin_group" {
   type    = string
   default = "Admin"
 }
 
-variable region {
+variable "region" {
   type    = string
-  default = "eu-west-1"
+  default = "af-south-1"
 }
 
-variable role {
+variable "role" {
   type        = string
   default     = "AdminUser"
   description = "The name of the role which is created in child accounts in order to access them"

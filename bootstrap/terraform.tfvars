@@ -1,2 +1,2 @@
-state_bucket="exmaple-bucket"
-users=["me"]
+state_bucket="tf-state-8970762357"
+users=["terraform"]

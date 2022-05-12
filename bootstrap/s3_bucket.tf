@@ -9,7 +9,7 @@ resource "aws_s3_bucket" "terraform-state-storage-s3" {
 
   lifecycle {
     prevent_destroy = true
-    ignore_changes  = ["policy"]
+    ignore_changes  = [policy]
   }
 
   server_side_encryption_configuration {

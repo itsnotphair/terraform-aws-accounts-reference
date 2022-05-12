@@ -1,3 +1,3 @@
-data external accounts {
+data "external" "accounts" {
   program = ["./accounts.sh"]
 }

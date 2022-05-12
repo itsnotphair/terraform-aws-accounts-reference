@@ -14,7 +14,7 @@ variable dynamodb_table {
 
 variable region {
   type    = string
-  default = "eu-west-1"
+  default = "af-south-1"
 }
 
 variable users {

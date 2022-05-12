@@ -1,3 +1,3 @@
-email_domain="exmaple.com"
-email_prefix="aws+"
-state_bucket="example-bucket"
+email_domain = "itsnotphair.com"
+email_prefix = "aws+"
+state_bucket = "tf-state-8970762357"

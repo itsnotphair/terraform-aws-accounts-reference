@@ -1,5 +1,5 @@
-data aws_iam_policy_document bucket-policy {
-  dynamic statement {
+data "aws_iam_policy_document" "bucket-policy" {
+  dynamic "statement" {
     for_each = local.accounts
 
     content {
@@ -14,7 +14,7 @@ data aws_iam_policy_document bucket-policy {
     }
   }
 
-  dynamic statement {
+  dynamic "statement" {
     for_each = local.accounts
 
     content {
